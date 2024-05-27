@@ -19,4 +19,26 @@ Refer the starter codebases here
 ## Section 2
 
 - [External Spring Config](https://docs.spring.io/spring-boot/reference/features/external-config.html)
-- 
+- Add properties file to the project
+- Add Conditional Bean creation based on the properties
+- Add Maven dependency for jdbc and h2
+
+## Section 3
+- [AutoConfigure Module](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/build.gradle)
+- [AutoConfigure Each lib list](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure)
+- [SprinBootApplication](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/SpringBootApplication.java) Consist of 
+  - Among others important ones are 
+    - EnableAutoConfiguration
+    - ComponentScan
+    - Above two means that Springboot scans all [Autoconfigure](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure) for classes that are called autoConfiguration 
+      - e.g. [aop](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/aop/AopAutoConfiguration.java)
+      - [cassandra](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/cassandra/CassandraAutoConfiguration.java)
+      - [jdbc](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration.java) 
+        - Similar to what we did
+    - Conditionl Code reference 
+    - [ConditionalOnJava](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/condition/ConditionalOnJava.java
+  - Discussion on [JDBC AutoConfiguration](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration.java)
+  - [Hikari](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.java)
+  - [Webserver Tomcat](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/embedded/EmbeddedWebServerFactoryCustomizerAutoConfiguration.java)
+  - [Tomcat Setup in spring code](https://github.com/spring-projects/spring-boot/blob/9def6f86c9f88c405f302d9e044d5ea463cfe1f5/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TomcatWebServer.java#L116) that we did 
+    - [Thread startup](https://github.com/spring-projects/spring-boot/blob/9def6f86c9f88c405f302d9e044d5ea463cfe1f5/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TomcatWebServer.java#L214)
