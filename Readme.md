@@ -9,3 +9,8 @@ Set up Tomcat Server:
 - Update pom.xml to add tomcat plugin from [here](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core/8.5.37)
 - Maven Reload the project 
 - Run the class with tomcat plugin
+
+Refer the starter codebases here 
+- (Github)[https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-starters/spring-boot-starter-tomcat/build.gradle]
+- Code has changed from pom to gradle, but the dependencies remain the same
+- Refer the dependencies from the above link and add them to your pom.xml

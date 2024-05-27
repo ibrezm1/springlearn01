@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee33f24-beb1-47b6-b7e6-e67b95567ad6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mypack/DefaultConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mypack/TomcatLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mypack/TomcatOnClassPathCondition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mypack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mypack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716816952206</updated>
       <workItem from="1716816953277" duration="794000" />
-      <workItem from="1716817760806" duration="7024000" />
+      <workItem from="1716817760806" duration="7655000" />
     </task>
     <servers />
   </component>
