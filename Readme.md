@@ -39,3 +39,21 @@
   - [Webserver Tomcat](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/embedded/EmbeddedWebServerFactoryCustomizerAutoConfiguration.java).
   - [Tomcat Setup in Spring Code](https://github.com/spring-projects/spring-boot/blob/9def6f86c9f88c405f302d9e044d5ea463cfe1f5/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TomcatWebServer.java#L116).
     - [Thread Startup](https://github.com/spring-projects/spring-boot/blob/9def6f86c9f88c405f302d9e044d5ea463cfe1f5/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TomcatWebServer.java#L214).
+   
+## What’s next
+
+### What is Spring Framework?
+Learn about the basics and core concepts of the Spring Framework.
+- [What is Spring Framework?](https://www.marcobehler.com/guides/spring-framework)
+
+### What is Spring MVC: @Controllers & RestControllers
+Understand the role of controllers and RestControllers in Spring MVC.
+- [What is Spring MVC: @Controllers & RestControllers](https://www.marcobehler.com/guides/spring-mvc)
+
+### How Spring Boot’s Autoconfigurations Work
+Discover how Spring Boot’s autoconfiguration mechanism operates.
+- [How Spring Boot’s Autoconfigurations Work](https://www.marcobehler.com/guides/spring-boot)
+
+### Spring Crash Course
+Marco's Crash course 
+- [Course on Spring Crash](https://www.youtube.com/watch?v=QuvS_VLbGko)
