@@ -5,3 +5,7 @@ Initial Setup Steps :
 - Create a simple class with main method
 - Run the class
 
+Set up Tomcat Server:
+- Update pom.xml to add tomcat plugin from [here](https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core/8.5.37)
+- Maven Reload the project 
+- Run the class with tomcat plugin
