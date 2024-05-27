@@ -17,7 +17,17 @@
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-core</artifactId>
         <version>8.5.37</version>
+        <!-- provided means only compile time -->
+        <scope>provided</scope>
       </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>5.1.5.RELEASE</version>
+      </dependency>
+
     </dependencies>
 
   <name>Archetype - untitled1</name>
