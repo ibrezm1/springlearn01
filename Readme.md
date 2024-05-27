@@ -1,3 +1,4 @@
+## Section 1
 Initial Setup Steps :
 - Create a Maven archtype project
 - Update pom to add dependencies 
@@ -11,6 +12,11 @@ Set up Tomcat Server:
 - Run the class with tomcat plugin
 
 Refer the starter codebases here 
-- (Github)[https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-starters/spring-boot-starter-tomcat/build.gradle]
+- [Github spring starter Codebase](https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-starters/spring-boot-starter-tomcat/build.gradle)
 - Code has changed from pom to gradle, but the dependencies remain the same
 - Refer the dependencies from the above link and add them to your pom.xml
+
+## Section 2
+
+- [External Spring Config](https://docs.spring.io/spring-boot/reference/features/external-config.html)
+- 

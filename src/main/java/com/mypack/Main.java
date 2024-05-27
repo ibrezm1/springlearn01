@@ -16,6 +16,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public class Main {
 
 
@@ -28,7 +32,16 @@ public class Main {
 
 
     public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DefaultConfig.class);
 
-        new AnnotationConfigApplicationContext(DefaultConfig.class);
+        DataSource dataSource = context.getBean(DataSource.class);
+        try (Connection connection = dataSource.getConnection()) {
+            if (connection.isValid(1000) ){
+                System.out.println("Connection is successful");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 }
